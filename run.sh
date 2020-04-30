@@ -22,5 +22,5 @@ then
     IMG=juno-base
 fi
 
-docker run -p 8888:8888 --name $IMG --mount source=notebooks,target=/u01/notebooks juno:$IMG 
+docker run --rm -p 8888:8888 --name $IMG --mount source=notebooks,target=/u01/notebooks juno:$IMG 
 
