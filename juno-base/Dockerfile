@@ -40,8 +40,8 @@ RUN wget --quiet $CONDA_INSTALL -O ~/anaconda.sh && \
     /bin/bash ~/anaconda.sh -b -p $CONDA_HOME && \
     rm ~/anaconda.sh 
 
-# Install matplotlib and seaborn
-RUN $PIP install matplotlib seaborn
+# Install flask-restful, django, django-restful
+RUN $PIP install flask-restful django djangorestframework
 
 # Volume for notebook files created
 VOLUME $NB_HOME
